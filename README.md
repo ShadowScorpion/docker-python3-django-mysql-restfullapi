@@ -8,15 +8,19 @@ Original **python** image on [DockerHub](https://hub.docker.com/_/python/).
 ```
 git clone https://github.com/ShadowScorpion/docker-python3-django-mysql-restfullapi.git
 ```
+
 - Change location to cloned folder
 ```
 cd ./docker-python3-django-mysql-restfullapi
 ```
+
 - Build image
 ```
 docker build --no-cache -t image-name .
 ```
+
 - Run image
+
     1. Run test Django application with RESTFullAPI
         ```
         docker run -d image-name
@@ -29,4 +33,4 @@ docker build --no-cache -t image-name .
         ```
         docker run -d -p 80:80 image-name -v /path_to_application:/app
         ```
-        * When application has been mounted, Docker will migrate all changes of Django on MySQL
+        * When application has been mounted, Docker will migrate all changes of Django to MySQL
