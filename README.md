@@ -2,7 +2,7 @@
 
 Original **python** image on [DockerHub](https://hub.docker.com/_/python/).
 
-### How to build image
+### How to build and run image
 
 - Clone this repo
 ```
@@ -34,3 +34,24 @@ docker build --no-cache -t image-name .
         docker run -d -p 80:80 image-name -v /path_to_application:/app
         ```
         * When application has been mounted, Docker will migrate all changes of Django to MySQL
+
+### Usage
+
+- Get MySQL
+```
+mysql -uroot -p
+```
+    * Docker will set "123456a" as password of root user to MySQL
+
+
+- Get admin page
+```
+http://host/admin
+```
+    * Docker will set "123456a" as password of root user to Django
+
+- Get API page of Django
+```
+http://host/components/api/server
+http://host/components/api/os
+```
