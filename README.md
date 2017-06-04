@@ -38,20 +38,14 @@ docker build --no-cache -t image-name .
 ### Usage
 
 - Get MySQL
-    ```
-    mysql -uroot -p
-    ```
-        * Docker will set "123456a" as password of root user to MySQL
+    `mysql -uroot -p`
+    * Docker will set "123456a" as password of root user to MySQL
 
 
 - Get admin page
-    ```
-    http://host/admin
-    ```
+    `http://host/admin`
         * Docker will set "123456a" as password of root user to Django
 
 - Get API page of Django
-    ```
-    http://host/components/api/server
-    http://host/components/api/os
-    ```
+    `http://host/components/api/server
+    http://host/components/api/os`
