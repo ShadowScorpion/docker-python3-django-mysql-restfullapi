@@ -41,6 +41,7 @@ docker build --no-cache -t image-name .
 ```
 mysql -uroot -p
 ```
+
     * Docker will set "123456a" as password of root user to MySQL
 
 
@@ -48,6 +49,7 @@ mysql -uroot -p
 ```
 http://host/admin
 ```
+
     * Docker will set "123456a" as password of root user to Django
 
 - Get API page of Django
